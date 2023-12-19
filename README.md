@@ -77,3 +77,29 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+# React Native Vector Icons
+
+1. Install:
+```
+$ npm install --save react-native-vector-icons
+```
+2. Edit the android/settings.gradle file as shown below:
+```
+rootProject.name = 'MyApp'
+
+include ':app'
+
+// for vector icon
+includeBuild('../node_modules/react-native-vector-icons/android')
+
+includeBuild('../node_modules/@react-native/gradle-plugin')
+```
+3. Edit the android/app/build.gradle (located in the app folder) as shown below:
+```
+apply plugin: "com.android.application"
+apply plugin: "com.facebook.react"
+
+// for vector icon
+apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
+```
