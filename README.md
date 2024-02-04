@@ -103,3 +103,10 @@ apply plugin: "com.facebook.react"
 // for vector icon
 apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
 ```
+
+# React Navigation
+
+1. Install:
+```
+$ npm install --save react-navigation
+```
