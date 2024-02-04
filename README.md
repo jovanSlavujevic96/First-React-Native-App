@@ -108,5 +108,7 @@ apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
 
 1. Install:
 ```
-$ npm install --save react-navigation
+$ npm install --save @react-navigation/native
+$ npm install react-native-screens react-native-safe-area-context
+$ npm install --save  @react-navigation/native-stack
 ```
