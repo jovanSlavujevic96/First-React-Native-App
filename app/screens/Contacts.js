@@ -7,18 +7,18 @@ import { ListItem } from '../components/ListItem';
 
 class Contacts extends Component {
   handleRowPress = (item) => {
+    this.props.navigation.navigate('Details', item);
     return null;
-  };
-
-  render() {
+  }
+  render = () => {
     return (
       <View>
           <FlatList
             style={{ backgroundColor: colors.background }}
             data={contacts}
-            renderItem={({ item }) =>
-            <ListItem contact={item} onPress={() => this.handleRowPress(item)} />
-          }
+            renderItem={
+              ({ item }) => <ListItem contact={item} onPress={() => this.handleRowPress(item)} />
+            }
             keyExtractor={(item) => item.email}
           />
       </View>
