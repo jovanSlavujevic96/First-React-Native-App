@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 
-import {Header} from '../components/UserDetails';
+import { Header, Actions } from '../components/UserDetails';
 import colors from '../config/colors';
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -35,11 +35,12 @@ class Details extends Component {
     return (
       <ScrollView style={{ backgroundColor: colors.background }}>
         <Header {...contact} />
-        <View style={{ padding: 20, backgroundColor: colors.rowLight }}>
+        <Actions {...contact} />
+        {/* <View style={{ padding: 20, backgroundColor: colors.rowLight }}>
           <DataRow typeOfData="email" valueOfData={contact.email} iconName="mail"/>
           <DataRow typeOfData="cell" valueOfData={contact.cell} iconName={["call", "chatbox-ellipses"]}/>
           <DataRow typeOfData="home" valueOfData={contact.phone} iconName="call"/>
-        </View>
+        </View> */}
       </ScrollView>
     );
   }
