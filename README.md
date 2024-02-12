@@ -81,11 +81,12 @@ To learn more about React Native, take a look at the following resources:
 # React Native Vector Icons
 
 1. Install:
-```
+```bash
+# install
 $ npm install --save react-native-vector-icons
 ```
 2. Edit the android/settings.gradle file as shown below:
-```
+```json
 rootProject.name = 'MyApp'
 
 include ':app'
@@ -96,7 +97,7 @@ includeBuild('../node_modules/react-native-vector-icons/android')
 includeBuild('../node_modules/@react-native/gradle-plugin')
 ```
 3. Edit the android/app/build.gradle (located in the app folder) as shown below:
-```
+```json
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
 
@@ -106,9 +107,27 @@ apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
 
 # React Navigation
 
-1. Install:
-```
+``` bash
+# install
 $ npm install --save @react-navigation/native
 $ npm install react-native-screens react-native-safe-area-context
 $ npm install --save  @react-navigation/native-stack
+```
+
+# Moment
+
+Library which easily helps to parse, validate, manipulate, and display dates in JavaScript.
+
+``` sh
+# install
+npm install --save moment
+```
+
+- Usage
+``` javascript
+import moment from 'moment';
+
+const date = new Date();
+
+moment(date).format('MMMM Do, YYYY'); // March 21st, 2017
 ```
