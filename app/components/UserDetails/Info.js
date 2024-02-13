@@ -12,13 +12,13 @@ const datify = (date) => {
 
 const Info = ({location, dob, registered, login}) => {
     return (
-        <View style={styles.plainDataContainer}>
-            <Row label="city" body={capitalizeFirstLetter(location.city)} actions = {[]} />
-            <Row label="birthday" body={datify(dob)} actions = {[]} />
-            <Row label="registered" body={datify(registered)} actions = {[]} />
-            <Row label="username" body={login.username} actions = {[]} />
+        <View style={styles.infoContainer}>
+            <Row label="city" body={capitalizeFirstLetter(location.city)} />
+            <Row label="birthday" body={datify(dob)} />
+            <Row label="registered" body={datify(registered)} />
+            <Row label="username" body={login.username} />
         </View>
     );
 };
 
-export default PlainData;
+export default Info;

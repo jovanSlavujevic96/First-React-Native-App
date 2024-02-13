@@ -57,7 +57,7 @@ export default StyleSheet.create({
         alignItems: 'flex-end',
         marginLeft: 13,
     },
-    plainDataContainer: {
-        marginTop: 15
+    infoContainer: {
+        paddingVertical: 15
     }
 });
