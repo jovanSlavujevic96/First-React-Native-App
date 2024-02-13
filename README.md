@@ -131,3 +131,23 @@ const date = new Date();
 
 moment(date).format('MMMM Do, YYYY'); // March 21st, 2017
 ```
+
+# TabNavigator
+
+- Usage:
+``` jsx
+import { TabNavigator } from 'react-navigator';
+
+export const Tabs = TabNavigator({
+   Tab1: {
+      screen: Tab1,
+      navigationOptions: {
+         tabBarLabel: 'Tab 1 Label',
+         tabBarIcon: ({ tintColor }) => <Icon name="ios-list" color={tintColor} />
+      },
+   },
+   Tab2: {
+      screen: Tab2,
+   },
+});
+```
