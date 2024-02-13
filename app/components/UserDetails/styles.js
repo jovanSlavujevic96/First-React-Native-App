@@ -56,5 +56,8 @@ export default StyleSheet.create({
         flextDirection: 'row',
         alignItems: 'flex-end',
         marginLeft: 13,
+    },
+    plainDataContainer: {
+        marginTop: 15
     }
 });
