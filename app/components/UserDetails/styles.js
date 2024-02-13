@@ -53,7 +53,7 @@ export default StyleSheet.create({
         justifyContent: 'space-between',
     },
     actionIcon: {
-        flextDirection: 'row',
+        flexDirection: 'row',
         alignItems: 'flex-end',
         marginLeft: 13,
     },
